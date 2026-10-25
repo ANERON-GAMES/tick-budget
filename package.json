@@ -1,0 +1,42 @@
+{
+  "name": "@aneron/tick-budget",
+  "version": "0.1.0",
+  "description": "Fixed-timestep accumulator that budgets simulation ticks per frame.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "keywords": [
+    "game-loop",
+    "fixed-timestep",
+    "accumulator",
+    "interpolation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ANERON-GAMES/tick-budget.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}
